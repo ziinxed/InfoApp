@@ -15,7 +15,7 @@ class LinksSerializer(serializers.ModelSerializer):
 
     def update(self, instance, validated_data):
         """
-        Update and return an existing `Snippet` instance, given the validated data.
+        Update and return an existing `Link` instance, given the validated data.
         """
         instance.title = validated_data.get('title', instance.title)
         instance.url = validated_data.get('url', instance.url)
